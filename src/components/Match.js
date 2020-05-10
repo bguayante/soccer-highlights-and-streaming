@@ -1,14 +1,16 @@
 import React from 'react';
-import Date from './Date'
-
+import Date from './Date';
 
 function Match(props) {
-    
-    return (
+	return (
 		<div className='match'>
-			<img src={props.imgUrl} alt='match thumbnail' />
-            <p>{props.title}</p>
-            <p className='date'><Date date={props.date}/></p>
+			<a href={props.matchUrl}>
+				<img src={props.imgUrl} alt='match thumbnail' />
+			</a>
+			<p>{props.title}</p>
+			<p className='date'>
+				<Date date={props.date} />
+			</p>
 		</div>
 	);
 }

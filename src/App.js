@@ -7,11 +7,8 @@ class App extends Component {
   constructor(props){
   super(props)
   this.state = {
-    videoURL: '',
     matches: [],
-    embed: '',
-    thumbnail: '',
-    date: ''
+    
   }
 }
 
@@ -42,6 +39,7 @@ componentDidMount(){
         {/* <div dangerouslySetInnerHTML={this.iFrame()}/> */}
 				{/* <MoviePlayer /> */}
         {/* {this.state.embed} */}
+        <select name='league'></select>
 				<FullMatchList matches={this.state.matches} />
 			</>
 

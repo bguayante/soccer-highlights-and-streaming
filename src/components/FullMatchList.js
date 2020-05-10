@@ -6,7 +6,7 @@ function FullMatchList(props) {
 		<section>
 			<div className='movies-grid'>
 				{props.matches.map((match) => (
-					<Match imgUrl={match.thumbnail} title={match.title} date={match.date} key={match.url} />
+					<Match imgUrl={match.thumbnail} title={match.title} date={match.date} matchUrl={match.url} key={match.url} />
 				))}
 			</div>
 		</section>
