@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Date(props) {
 	let date = props.date;
 	let splitDate = date.split('-');
@@ -29,14 +27,14 @@ function Date(props) {
 	} else if (month === '10') {
 		month = 'Oct';
 	} else if (month === '11') {
-		month = 'November';
+		month = 'Nov';
 	} else if (month === '12') {
-		month = 'December';
+		month = 'Dec';
 	}
 
-	let formattedDate = `${month} ${day} ${year}`;
+	let formattedDate = `${day} ${month} ${year}`;
 
-	return <p className='date'>{formattedDate}</p>;
+	return formattedDate;
 }
 
 export default Date;

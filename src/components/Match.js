@@ -4,8 +4,8 @@ import Date from './Date';
 function Match(props) {
 	return (
 		<div className='match'>
-			<a href={props.matchUrl}>
-				<img src={props.imgUrl} alt='match thumbnail' />
+			<a href={props.matchUrl} value={props.competion}>
+				<img src={props.imgUrl} alt={props.title} />
 			</a>
 			<p>{props.title}</p>
 			<p className='date'>

@@ -1,20 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
 
-.movies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
+* {
+	margin: 0;
+	padding: 0;
 }
+
+body {
+	background-image: url('./components/imgs/bg.jpg');
+	background-repeat: repeat;
+}
+
+.movies-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1rem;
+	margin: 2rem;
+}
+
 img {
-  width: 100%;
+	width: 100%;
 }
 
 p {
-  font-family: 'News Cycle', sans-serif;
-  text-align: left;
-  font-size: 14px;
+	font-family: 'News Cycle', sans-serif;
+	text-align: left;
+	font-size: 0.9rem;
+	color: white;
 }
 
 .date {
-  font-size: 12px;
+	font-size: 0.8rem;
+	color: rgb(199, 199, 199);
+}
+
+.videoPlayer {
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropdown {
+	padding: 10px;
+}
+
+.dropdown-content {
+	border: 2px solid white;
+	border-radius: 1rem;
+	background-color: rgba(0, 128, 0, 0.733);
+	color: white;
+	font-weight:bolder
+}
+
+.filter-button {
+	border: 2px solid white;
+	border-radius: 0.4rem;
+	background-color:  rgba(0, 128, 0, 0.733);
+	color: white;
+	font-weight:bolder;
+	margin: 15px;
 }
